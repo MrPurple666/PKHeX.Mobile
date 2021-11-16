@@ -27,9 +27,9 @@ jobs:
     - name: Build
       run: msbuild '**/*droid*.csproj' /t:PackageForAndroid /p:Configuration=Release
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: PKHeX.Mobile'
-  inputs:
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifact: PKHeX.Mobile'
+    inputs:
     pathtoPublish: '$(outputDirectory)'
     ArtifactName: PKHeX.Android
-  condition: succeededOrFailed()
+    condition: succeededOrFailed()
