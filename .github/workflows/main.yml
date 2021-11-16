@@ -1,3 +1,6 @@
+jobs:
+  Pkhex_job:
+    name: PkHex
 on:
   push:
     branches: [ $default-branch ]
