@@ -1,4 +1,6 @@
-
+on:
+  push:
+    branches: [ $default-branch ]
 
 pool:
   vmImage: 'windows-latest'
