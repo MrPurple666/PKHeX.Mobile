@@ -1,6 +1,7 @@
 name: Build Xamarin.Android app
 
 on:
+  push:
     branches: [ $default-branch ]
 
 jobs:
