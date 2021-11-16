@@ -1,6 +1,7 @@
 name: Build Xamarin.Android app
 
-branch: [master]
+on:
+    branches: [ $default-branch ]
 
 jobs:
   build:
