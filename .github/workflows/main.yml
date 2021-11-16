@@ -1,6 +1,6 @@
 name: Build Xamarin.Android app
 
-on: [master]
+branch: [master]
 
 jobs:
   build:
